@@ -8,11 +8,12 @@ environment:
   flutter: ">=2.10.3"
 
 dependencies:
+  dart_code_metrics: 4.12.0
+  
   flutter:
     sdk: flutter
 
 dev_dependencies:
-  dart_code_metrics: 4.12.0
   flutter_test:
     sdk: flutter
 
