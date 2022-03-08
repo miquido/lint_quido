@@ -251,7 +251,7 @@ dart_code_metrics:
     - double-literal-format:
         exclude:
           - test/**
-    - format-comment
+    # - format-comment - disabled as too strict, and comments are - you know - comments
     - member-ordering-extended:
         alphabetize: false
         order:
@@ -286,7 +286,7 @@ dart_code_metrics:
         exclude:
           - test/**
     # - prefer-trailing-comma - this one is pure hardcore
-    - tag-name
+    - tag-name:
         exclude:
           - test/**
     - always-remove-listener
