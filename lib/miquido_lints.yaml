@@ -11,6 +11,7 @@ analyzer:
     - "**/*.g.dart"
     - "**/*.freezed.dart"
     - lib/generated/**
+    - generated_plugin_registrant.dart
 
   language:
     strict-raw-types: true
