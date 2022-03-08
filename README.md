@@ -83,7 +83,7 @@ dart run dart_code_metrics:metrics check-unused-files lib
 dart run dart_code_metrics:metrics analyze lib
 ```
 
-[Here](https://dartcodemetrics.dev/docs/cli/overview#available-commands) you can find documentation aboud dart metrics command.
+[Here](https://dartcodemetrics.dev/docs/cli/overview#available-commands) you can find documentation about dart metrics command.
 
 ## Additional information
 
