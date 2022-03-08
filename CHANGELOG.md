@@ -1,4 +1,4 @@
-## 0.0.0
+## 0.1.0
 
 * This is first version of miquido_flutter_lints
 * Lints from dart_metrics version 4.12.0

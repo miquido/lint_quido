@@ -45,6 +45,7 @@ linter:
     - avoid_equals_and_hash_code_on_mutable_classes
     - avoid_escaping_inner_quotes
     - avoid_field_initializers_in_const_classes
+    - avoid_final_parameters
     - avoid_function_literals_in_foreach_calls
     - avoid_implementing_value_types
     - avoid_init_to_null
@@ -170,7 +171,7 @@ linter:
     - prefer_typing_uninitialized_variables
     - prefer_void_to_null
     - provide_deprecation_message
-    # - public_member_api_docs - Too much comments after enabling that, maybe useful in ultra large projects, sdks with lots of functionalites
+    # - public_member_api_docs - Too much comments will be in code after enabling that, maybe useful in ultra large projects, sdks with lots of functionalites
     - recursive_getters
     - require_trailing_commas
     - secure_pubspec_urls
@@ -241,7 +242,7 @@ dart_code_metrics:
     - avoid-missing-enum-constant-in-map
     - avoid-nested-conditional-expressions
     # - avoid-non-null-assertion - this is good lint, but sometimes is unfixable
-    # - avoid-throw-in-catch-block - enabling it because of provided justification is just flexing
+    # - avoid-throw-in-catch-block - enabling it only because of provided justification in our opinion is just flexing
     - avoid-unnecessary-type-assertions
     - avoid-unnecessary-type-casts
     - avoid-unrelated-type-assertions
@@ -252,7 +253,7 @@ dart_code_metrics:
         exclude:
           - test/**
     # - format-comment - disabled as too strict, and comments are - you know - comments
-    - member-ordering-extended:
+    - member-ordering-extended: #This is order that works perfect with Flutter Stylizer for VS Code: https://marketplace.visualstudio.com/items?itemName=gmlewis-vscode.flutter-stylizer
         alphabetize: false
         order:
           - constructors
@@ -268,12 +269,12 @@ dart_code_metrics:
     - no-empty-block:
         exclude:
           - test/**
-    # - no-equal-arguments - disabled as triggered when setting same paddings...
+    # - no-equal-arguments - disabled as triggered when setting same paddings, sizes in widgets etc...
     - no-equal-then-else
-    # - no-magic-number - disabled as triggered when setting width height making you extract each value to separate variable
+    # - no-magic-number - disabled as it makes you extract each height, width (and similar properties) value to separate variables 
     - no-object-declaration
     - prefer-async-await
-    # - prefer-conditional-expressions - disabled as sometimes it is not as readible as expected
+    # - prefer-conditional-expressions - disabled as sometimes this condition is not as readible as you would expected
     - prefer-correct-identifier-length:
         exceptions: ['i', 'x', 'id', 'db']
         min-identifier-length: 3
@@ -285,17 +286,17 @@ dart_code_metrics:
         severity: error
         exclude:
           - test/**
-    # - prefer-trailing-comma - this one is pure hardcore
+    # - prefer-trailing-comma - this one is pure hardcore and too strict
     - tag-name:
         exclude:
           - test/**
     - always-remove-listener
-    # - avoid-border-all - proposed solution is adding extra complexiticy for meaningless profit
+    # - avoid-border-all - proposed solution is adding extra code complexiticy for meaningless profit
     - avoid-returning-widgets:
         severity: error
     - avoid-unnecessary-setstate
     - avoid-wrapping-in-padding
-    # - prefer-const-border-radius - proposed solution is adding extra complexiticy for meaningless profit
+    # - prefer-const-border-radius - proposed solution is adding extra code complexiticy for meaningless profit
     - prefer-extracting-callbacks:
         ignored-named-arguments:
           - listener
@@ -305,9 +306,6 @@ dart_code_metrics:
         ignore-private-widgets: true
     - prefer-intl-name
     - provide-correct-intl-args
-
-  rules-exclude:
-    - member-ordering-extended
 
   metrics:
     cyclomatic-complexity: 10
