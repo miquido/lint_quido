@@ -11,7 +11,9 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-This is collection of Flutter lints that we share and use in Miquido Sofware House. This is strict, large and rouboust collection beacuse we strive for high quality code and we want follow the same rules in all of our mobile apps.
+##### This is collection of Flutter lints that we share and use in Miquido Sofware House.
+
+This is strict, large and roboust collection beacuse we strive for high quality code, good practices and we want follow the same coding style in all of our mobile apps.
 
 ## Features
 
@@ -33,6 +35,11 @@ const like = 'sample';
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+This is set of sources we are getting those linters and about good practices in Dart/Flutter
+- [All Dart lints](https://dart-lang.github.io/linter/lints/)
+- [All Dart lints, but this time linter source code](https://github.com/dart-lang/linter/blob/master/example/all.yaml)
+- [Customizing static analysis in Dart](https://dart.dev/guides/language/analysis-options)
+- [Effective Dart: Usage](https://dart.dev/guides/language/effective-dart/usage)
+- [Flutter lints](https://github.com/flutter/packages/tree/master/packages/flutter_lints)
+- [Dart metrics](https://dartcodemetrics.dev/docs/rules/overview)
+- [Dart language type system](https://github.com/dart-lang/language/tree/master/resources/type-system)
