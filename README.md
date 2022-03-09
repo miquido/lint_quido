@@ -11,13 +11,13 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 # miquido_flutter_lints
----
 ##### This is collection of Flutter lints that we use and follow in [Miquido Software development company](https://www.miquido.com).
 
 This is strict, large and robust collection beacuse we strive for high quality code, good practices and we want follow the same coding style in all our mobile apps.
 
 And we just looooove lots of lints. :blue_heart:
 
+---
 ## Getting started
 We tested current configuration with this enviroment:
 ```yaml
@@ -65,6 +65,7 @@ And that is all folks! You are good to go!
 #### Excluding and suppressing rules
 ###### Not recommended... ;)
 If for some reason you don't agree with some linters, or you heavily oppose some approaches you can exclude or suppress lints.
+
 ##### Excluding
 To completely exclude rule from linter, modify `analysis_options.yaml`:
 - at line level (comment directly above the specific line of code):
@@ -77,6 +78,7 @@ dart_code_metrics:
   rules-exclude: #linters from dart_code_metrics
     - prefer-last
 ```
+
 ##### Suppressing
 In code add _ignore_ comments
 - at line level (comment directly above the specific line of code):
@@ -89,7 +91,6 @@ In code add _ignore_ comments
 ```
 
 #### Commands
-
 To analyze your code in terminal use this commands:
 ```sh
 # Default flutter analyze, mandatory to pass!
@@ -114,9 +115,9 @@ This is set of sources from which we are getting our linters and about good prac
 - [Flutter lints](https://github.com/flutter/packages/tree/master/packages/flutter_lints)
 - [Dart metrics](https://dartcodemetrics.dev/docs/rules/overview)
 - [Dart language type system](https://github.com/dart-lang/language/tree/master/resources/type-system)
+
 ---
 #### About Miquido
-
 - [About](https://careers.miquido.com/about-us/)
 - [Careers](https://careers.miquido.com/job-offers/)
 - [Internship at Miquido](https://careers.miquido.com/students/)
