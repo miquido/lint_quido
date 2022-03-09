@@ -19,8 +19,6 @@ This is strict, large and robust collection beacuse we strive for high quality c
 And we just looooove lots of lints. :blue_heart:
 
 ## Getting started
----
-
 We tested current configuration with this enviroment:
 ```yaml
 environment:
@@ -31,7 +29,6 @@ environment:
 so it is required to update your flutter project to meet this conditions.
 
 #### Installation
-
 Reference this package in your `pubspec.yaml` in **dev_dependencies** section.
 
 Until we are not published in [pub.dev](https://pub.dev), reference it like this
@@ -51,7 +48,6 @@ you can copy content of [this file](lib/miquido_lints.yaml) to your `analysis_op
 Also if you star this repo, that would be nice.
 
 ## Usage
----
 After you add `miquido_flutter_lints` package as a dev_dependency, we recommend to copy code from below to `analysis_options.yaml` file which is in root of your flutter project folder.
 
 ```yaml
@@ -68,7 +64,6 @@ And that is all folks! You are good to go!
 
 #### Excluding and suppressing rules
 ###### Not recommended... ;)
-
 If for some reason you don't agree with some linters, or you heavily oppose some approaches you can exclude or suppress lints.
 ##### Excluding
 To completely exclude rule from linter, modify `analysis_options.yaml`:
@@ -111,7 +106,6 @@ dart run dart_code_metrics:metrics analyze lib
 [Here](https://dartcodemetrics.dev/docs/cli/overview#available-commands) you can find documentation about dart metrics command.
 
 ## Additional information
----
 This is set of sources from which we are getting our linters and about good practices in Dart/Flutter:
 - [All Dart lints](https://dart-lang.github.io/linter/lints/)
 - [All Dart lints, but this time linter source code](https://github.com/dart-lang/linter/blob/master/example/all.yaml)
@@ -120,7 +114,7 @@ This is set of sources from which we are getting our linters and about good prac
 - [Flutter lints](https://github.com/flutter/packages/tree/master/packages/flutter_lints)
 - [Dart metrics](https://dartcodemetrics.dev/docs/rules/overview)
 - [Dart language type system](https://github.com/dart-lang/language/tree/master/resources/type-system)
-
+---
 #### About Miquido
 
 - [About](https://careers.miquido.com/about-us/)
