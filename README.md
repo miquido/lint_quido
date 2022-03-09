@@ -11,13 +11,15 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 # miquido_flutter_lints
+---
 ##### This is collection of Flutter lints that we use and follow in [Miquido Software development company](https://www.miquido.com).
 
 This is strict, large and robust collection beacuse we strive for high quality code, good practices and we want follow the same coding style in all our mobile apps.
 
-And we just looooove lots of lints.
+And we just looooove lots of lints. :blue_heart:
 
 ## Getting started
+---
 
 We tested current configuration with this enviroment:
 ```yaml
@@ -49,7 +51,7 @@ you can copy content of [this file](lib/miquido_lints.yaml) to your `analysis_op
 Also if you star this repo, that would be nice.
 
 ## Usage
-
+---
 After you add `miquido_flutter_lints` package as a dev_dependency, we recommend to copy code from below to `analysis_options.yaml` file which is in root of your flutter project folder.
 
 ```yaml
@@ -63,6 +65,33 @@ analyzer:
 ```
 
 And that is all folks! You are good to go!
+
+#### Excluding and suppressing rules
+###### Not recommended... ;)
+
+If for some reason you don't agree with some linters, or you heavily oppose some approaches you can exclude or suppress lints.
+##### Excluding
+To completely exclude rule from linter, modify `analysis_options.yaml`:
+- at line level (comment directly above the specific line of code):
+```yaml
+analyzer:
+  errors: #linters from flutter sdk
+    unawaited_futures: ignore
+
+dart_code_metrics:
+  rules-exclude: #linters from dart_code_metrics
+    - prefer-last
+```
+##### Suppressing
+In code add _ignore_ comments
+- at line level (comment directly above the specific line of code):
+```dart
+// ignore: public_member_api_docs
+```
+- at file level (comment at the top of the file):
+```dart
+// ignore: public_member_api_docs
+```
 
 #### Commands
 
@@ -82,7 +111,7 @@ dart run dart_code_metrics:metrics analyze lib
 [Here](https://dartcodemetrics.dev/docs/cli/overview#available-commands) you can find documentation about dart metrics command.
 
 ## Additional information
-
+---
 This is set of sources from which we are getting our linters and about good practices in Dart/Flutter:
 - [All Dart lints](https://dart-lang.github.io/linter/lints/)
 - [All Dart lints, but this time linter source code](https://github.com/dart-lang/linter/blob/master/example/all.yaml)
