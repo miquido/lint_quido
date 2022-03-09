@@ -89,7 +89,7 @@ linter:
     - curly_braces_in_flow_control_structures
     # - depend_on_referenced_packages - This will make you at some point add all pub.dev to your pubspec file. Maybe suitable for ultra small petprojets with one dependency at max.
     - deprecated_consistency
-    # - diagnostic_describe_all_properties - Zero benefits found, add unncessary complexity to code
+    # - diagnostic_describe_all_properties - Add unncessary complexity to code and makes it difficult to read
     - directives_ordering
     - do_not_use_environment
     - empty_catches
@@ -303,6 +303,7 @@ dart_code_metrics:
           - listener
           - listenWhen
           - buildWhen
+          - itemBuilder
     - prefer-single-widget-per-file:
         ignore-private-widgets: true
     - prefer-intl-name

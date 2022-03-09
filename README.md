@@ -17,10 +17,6 @@ This is strict, large and robust collection beacuse we strive for high quality c
 
 And we just looooove lots of lints.
 
-## Features
-
-- Using and following this linter makes your code better. FACTS.
-
 ## Getting started
 
 We tested current configuration with this enviroment:
@@ -30,7 +26,7 @@ environment:
   flutter: ^2.10.3
 ```
 
-so we recommend to update your flutter project to met this conditions.
+so it is required to update your flutter project to meet this conditions.
 
 #### Installation
 
