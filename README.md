@@ -63,12 +63,11 @@ analyzer:
 And that is all folks! You are good to go!
 
 #### Excluding and suppressing rules
-###### Not recommended... ;)
+###### Not recommended... :wink:
 If for some reason you don't agree with some linters, or you heavily oppose some approaches you can exclude or suppress lints.
 
 ##### Excluding
 To completely exclude rule from linter, modify `analysis_options.yaml`:
-- at line level (comment directly above the specific line of code):
 ```yaml
 analyzer:
   errors: #linters from flutter sdk
