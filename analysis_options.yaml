@@ -1,2 +1,7 @@
-# Additional information about this file can be found at
-# https://dart.dev/guides/language/analysis-options
+include: package:miquido_flutter_lints/miquido_lints.yaml
+
+analyzer:
+  errors:
+    # Those are handy, but annoying lints. Remember to change `ignore` to `info` once per two weeks or before app release.
+    prefer_const_constructors: ignore
+    prefer_const_constructors_in_immutables: ignore
