@@ -39,7 +39,7 @@ linter:
     - avoid_bool_literals_in_conditional_expressions
     - avoid_catches_without_on_clauses
     - avoid_catching_errors
-    # - avoid_classes_with_only_static_members - We know, but somewhat this doesnt fell right and clean
+    # - avoid_classes_with_only_static_members - We know, but somewhat this doesn't fell right and clean
     - avoid_double_and_int_checks
     - avoid_dynamic_calls
     - avoid_empty_else
@@ -241,12 +241,12 @@ dart_code_metrics:
     - avoid-collection-methods-with-unrelated-types
     # - avoid-dynamic - as much as we would love to have it, sometimes it is necessary
     - avoid-global-state
-    # - avoid-ignoring-return-values - sometimes method return something, but you dont care, and that is ok
+    # - avoid-ignoring-return-values - sometimes method return something, but you don't care, and that is ok
     # - avoid-late-keyword - makes no sense
     - avoid-missing-enum-constant-in-map
     - avoid-nested-conditional-expressions
-    - avoid-non-ascii-symbols
-    # - avoid-non-null-assertion - this is good lint, but sometimes is unfixable
+    # - avoid-non-ascii-symbols - this warns about emojis, currency symbols (sometimes needed, makes no sense to use or to ignore every time)
+    # - avoid-non-null-assertion - this is good lint, but sometimes is un-fixable
     # - avoid-throw-in-catch-block - enabling it only because of provided justification in our opinion is just flexing
     - avoid-unnecessary-type-assertions
     - avoid-unnecessary-type-casts
@@ -286,7 +286,7 @@ dart_code_metrics:
         min-identifier-length: 3
         max-identifier-length: 35
     - prefer-correct-type-name
-    # - prefer-first - disabled as oldschool array[0] is clearer
+    # - prefer-first - disabled as old-school array[0] is clearer
     - prefer-immediate-return
     - prefer-last # but this one is much better that array[array.length-1]
     - prefer-match-file-name:
@@ -294,7 +294,7 @@ dart_code_metrics:
         exclude:
           - test/**
     # - prefer-trailing-comma - this one is pure hardcore and too strict
-    - prefer-moving-to-variable
+    # - prefer-moving-to-variable - as of usage Theme.of(context) this lights up for every textTheme style used in one widget used
     - tag-name:
         exclude:
           - test/**
