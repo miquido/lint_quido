@@ -89,7 +89,7 @@ linter:
     - curly_braces_in_flow_control_structures
     # - depend_on_referenced_packages - This will make you at some point add all pub.dev to your pubspec file. Maybe suitable for ultra small petprojets with one dependency at max.
     - deprecated_consistency
-    # - diagnostic_describe_all_properties - Add unncessary complexity to code and makes it difficult to read
+    # - diagnostic_describe_all_properties - Add unnecessary complexity to code and makes it difficult to read
     - directives_ordering
     - do_not_use_environment
     - empty_catches
@@ -212,7 +212,9 @@ linter:
     - unrelated_type_equality_checks
     - unsafe_html
     # - use_build_context_synchronously - this is mostly useful in some animations, but most of the time it unnecessary makes code more complex
+    - use_colored_box
     - use_decorated_box
+    - use_enums
     - use_full_hex_values_for_flutter_colors
     - use_function_type_syntax_for_parameters
     - use_if_null_to_convert_nulls_to_bools
@@ -224,6 +226,7 @@ linter:
     - use_rethrow_when_possible
     - use_setters_to_change_properties
     - use_string_buffers
+    - use_super_parameters
     - use_test_throws_matchers
     - use_to_and_as_if_applicable
     - valid_regexps
@@ -231,8 +234,8 @@ linter:
 
 # More about this additional linter here: https://dartcodemetrics.dev/docs/rules/overview
 # This is more strict linter, and it is very cool to follow it, but it is not mandatory to obey.
-# Only set of default rules above is manatory to resolve and pass pipeline
-# to exectute run `flutter analyze`. It should show "No issues found!" message.
+# Only set of default rules above is mandatory to resolve and pass pipeline
+# to execute run `flutter analyze`. It should show "No issues found!" message.
 dart_code_metrics:
   rules:
     - avoid-collection-methods-with-unrelated-types
@@ -242,6 +245,7 @@ dart_code_metrics:
     # - avoid-late-keyword - makes no sense
     - avoid-missing-enum-constant-in-map
     - avoid-nested-conditional-expressions
+    - avoid-non-ascii-symbols
     # - avoid-non-null-assertion - this is good lint, but sometimes is unfixable
     # - avoid-throw-in-catch-block - enabling it only because of provided justification in our opinion is just flexing
     - avoid-unnecessary-type-assertions
@@ -275,35 +279,39 @@ dart_code_metrics:
     # - no-magic-number - disabled as it makes you extract each height, width (and similar properties) value to separate variables 
     - no-object-declaration
     - prefer-async-await
-    # - prefer-conditional-expressions - disabled as sometimes this condition is not as readible as you would expected
+    - prefer-commenting-analyzer-ignores
+    # - prefer-conditional-expressions - disabled as sometimes this condition is not as readable as you would expected
     - prefer-correct-identifier-length:
         exceptions: ['i', 'x', 'id', 'db']
         min-identifier-length: 3
         max-identifier-length: 35
     - prefer-correct-type-name
     # - prefer-first - disabled as oldschool array[0] is clearer
+    - prefer-immediate-return
     - prefer-last # but this one is much better that array[array.length-1]
     - prefer-match-file-name:
         severity: error
         exclude:
           - test/**
     # - prefer-trailing-comma - this one is pure hardcore and too strict
+    - prefer-moving-to-variable
     - tag-name:
         exclude:
           - test/**
     - always-remove-listener
-    # - avoid-border-all - proposed solution is adding extra code complexiticy for meaningless profit
+    # - avoid-border-all - proposed solution is adding extra code complexity for meaningless profit
     - avoid-returning-widgets:
         severity: error
     - avoid-unnecessary-setstate
     - avoid-wrapping-in-padding
-    # - prefer-const-border-radius - proposed solution is adding extra code complexiticy for meaningless profit
+    # - prefer-const-border-radius - proposed solution is adding extra code complexity for meaningless profit
     - prefer-extracting-callbacks:
         ignored-named-arguments:
           - listener
           - listenWhen
           - buildWhen
           - itemBuilder
+          - builder
     - prefer-single-widget-per-file:
         ignore-private-widgets: true
     - prefer-intl-name
@@ -335,3 +343,4 @@ dart_code_metrics:
         severity: warning
         exclude:
           - test/**
+    - long-parameter-list
