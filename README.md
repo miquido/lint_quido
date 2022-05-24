@@ -13,17 +13,17 @@ and the Flutter guide for
 # miquido_flutter_lints
 ##### This is collection of Flutter lints that we use and follow in [Miquido Software development company](https://www.miquido.com).
 
-This is strict, large and robust collection beacuse we strive for high quality code, good practices and we want follow the same coding style in all our mobile apps.
+This is strict, large and robust collection because we strive for high quality code, good practices and we want follow the same coding style in all our mobile apps.
 
 And we just looooove lots of lints. :blue_heart:
 
 ---
 ## Getting started
-We tested current configuration with this enviroment:
+We tested current configuration with this environment:
 ```yaml
 environment:
-  sdk: ">=2.16.1 <3.0.0"
-  flutter: ^2.10.3
+  sdk: ">=2.17.0 <3.0.0"
+  flutter: ^3.0.0
 ```
 
 so it is required to update your flutter project to meet this conditions.
@@ -43,7 +43,7 @@ dev_dependencies:
 
 or
 
-you can copy content of [this file](lib/miquido_lints.yaml) to your `analysis_options.yaml`. In this approach remember that you need to depend on `dart_code_metrics: 4.12.0`, and you will need to add that package to your `pubspec.yaml` as well. Also you will need to visit this repository from time to time to check for changes! 
+you can copy content of [this file](lib/miquido_lints.yaml) to your `analysis_options.yaml`. In this approach remember that you need to depend on `dart_code_metrics: 4.15.2`, and you will need to add that package to your `pubspec.yaml` as well. Also you will need to visit this repository from time to time to check for changes! 
 
 Also if you star this repo, that would be nice.
 
