@@ -307,7 +307,7 @@ dart_code_metrics:
     - avoid-wrapping-in-padding
     # - prefer-const-border-radius - proposed solution is adding extra code complexity for meaningless profit
     - prefer-extracting-callbacks:
-        allowed-line-count: 1
+        allowed-line-count: 0
         ignored-named-arguments:
           - listener
           - listenWhen
