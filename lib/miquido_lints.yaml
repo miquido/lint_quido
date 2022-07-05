@@ -238,6 +238,7 @@ linter:
 # to execute run `flutter analyze`. It should show "No issues found!" message.
 dart_code_metrics:
   rules:
+    # - avoid_restricted_imports - this would be good for modular projects and packages
     - avoid-collection-methods-with-unrelated-types
     # - avoid-dynamic - as much as we would love to have it, sometimes it is necessary
     - avoid-global-state
@@ -306,6 +307,7 @@ dart_code_metrics:
     - avoid-wrapping-in-padding
     # - prefer-const-border-radius - proposed solution is adding extra code complexity for meaningless profit
     - prefer-extracting-callbacks:
+        allowed-line-count: 0
         ignored-named-arguments:
           - listener
           - listenWhen
