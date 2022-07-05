@@ -1,6 +1,6 @@
 name: miquido_flutter_lints
 description: Collection of Flutter lints that we use and follow in Miquido
-version: 0.2.5
+version: 0.2.4
 homepage: https://www.miquido.com
 
 environment:
