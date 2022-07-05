@@ -91,6 +91,7 @@ linter:
     - deprecated_consistency
     # - diagnostic_describe_all_properties - Add unnecessary complexity to code and makes it difficult to read
     - directives_ordering
+    - discarded_futures
     - do_not_use_environment
     - empty_catches
     - empty_constructor_bodies
@@ -199,6 +200,7 @@ linter:
     - unnecessary_late
     - unnecessary_new
     - unnecessary_null_aware_assignments
+    - unnecessary_null_aware_operator_on_extension_on_nullable
     - unnecessary_null_checks
     - unnecessary_null_in_if_null_operators
     - unnecessary_nullable_for_final_variable_declarations
@@ -209,6 +211,7 @@ linter:
     - unnecessary_string_escapes
     - unnecessary_string_interpolations
     - unnecessary_this
+    - unnecessary_to_list_in_spreads
     - unrelated_type_equality_checks
     - unsafe_html
     # - use_build_context_synchronously - this is mostly useful in some animations, but most of the time it unnecessary makes code more complex
@@ -238,6 +241,7 @@ linter:
 # to execute run `flutter analyze`. It should show "No issues found!" message.
 dart_code_metrics:
   rules:
+    # - avoid_restricted_imports - this would be good for modular projects and packages
     - avoid-collection-methods-with-unrelated-types
     # - avoid-dynamic - as much as we would love to have it, sometimes it is necessary
     - avoid-global-state
@@ -306,6 +310,7 @@ dart_code_metrics:
     - avoid-wrapping-in-padding
     # - prefer-const-border-radius - proposed solution is adding extra code complexity for meaningless profit
     - prefer-extracting-callbacks:
+        allowed-line-count: 1
         ignored-named-arguments:
           - listener
           - listenWhen
