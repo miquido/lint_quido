@@ -37,7 +37,7 @@ linter:
     - annotate_overrides
     # - avoid_annotating_with_dynamic - Super problematic to fix with avoid_types_on_closure_parameters enabled
     - avoid_bool_literals_in_conditional_expressions
-    - avoid_catches_without_on_clauses
+    # - avoid_catches_without_on_clauses - Flutter throws _CastError when parsing json fails, so we need to handle both Error and Exception in all API classes
     - avoid_catching_errors
     # - avoid_classes_with_only_static_members - We know, but somewhat this doesn't fell right and clean
     - avoid_double_and_int_checks
@@ -91,6 +91,7 @@ linter:
     - deprecated_consistency
     # - diagnostic_describe_all_properties - Add unnecessary complexity to code and makes it difficult to read
     - directives_ordering
+    - discarded_futures
     - do_not_use_environment
     - empty_catches
     - empty_constructor_bodies
@@ -101,7 +102,6 @@ linter:
     - flutter_style_todos
     - hash_and_equals
     - implementation_imports
-    - invariant_booleans
     - iterable_contains_unrelated_type
     - join_return_with_assignment
     - leading_newlines_in_multiline_strings
@@ -199,6 +199,7 @@ linter:
     - unnecessary_late
     - unnecessary_new
     - unnecessary_null_aware_assignments
+    - unnecessary_null_aware_operator_on_extension_on_nullable
     - unnecessary_null_checks
     - unnecessary_null_in_if_null_operators
     - unnecessary_nullable_for_final_variable_declarations
@@ -209,6 +210,7 @@ linter:
     - unnecessary_string_escapes
     - unnecessary_string_interpolations
     - unnecessary_this
+    - unnecessary_to_list_in_spreads
     - unrelated_type_equality_checks
     - unsafe_html
     # - use_build_context_synchronously - this is mostly useful in some animations, but most of the time it unnecessary makes code more complex
@@ -238,8 +240,9 @@ linter:
 # to execute run `flutter analyze`. It should show "No issues found!" message.
 dart_code_metrics:
   rules:
-    # - avoid_restricted_imports - this would be good for modular projects and packages
+    # - avoid-banned-imports - this would be good for modular projects and packages
     - avoid-collection-methods-with-unrelated-types
+    - avoid-duplicate-exports
     # - avoid-dynamic - as much as we would love to have it, sometimes it is necessary
     - avoid-global-state
     # - avoid-ignoring-return-values - sometimes method return something, but you don't care, and that is ok
@@ -248,7 +251,11 @@ dart_code_metrics:
     - avoid-nested-conditional-expressions
     # - avoid-non-ascii-symbols - this warns about emojis, currency symbols (sometimes needed, makes no sense to use or to ignore every time)
     # - avoid-non-null-assertion - this is good lint, but sometimes is un-fixable
+    # - avoid-passing-async-when-sync-expected - doesn't go well with lambda expressions, onPressed or freezed
+    - avoid-redundant-async:
+        severity: info
     # - avoid-throw-in-catch-block - enabling it only because of provided justification in our opinion is just flexing
+    - avoid-top-level-members-in-tests
     - avoid-unnecessary-type-assertions
     - avoid-unnecessary-type-casts
     - avoid-unrelated-type-assertions
@@ -286,16 +293,20 @@ dart_code_metrics:
         exceptions: ['i', 'x', 'id', 'db']
         min-identifier-length: 3
         max-identifier-length: 35
+    - prefer-correct-test-file-name:
+        severity: error
     - prefer-correct-type-name
+    - prefer-enums-by-name
     # - prefer-first - disabled as old-school array[0] is clearer
     - prefer-immediate-return
+    - prefer-iterable-of
     - prefer-last # but this one is much better that array[array.length-1]
     - prefer-match-file-name:
         severity: error
         exclude:
           - test/**
-    # - prefer-trailing-comma - this one is pure hardcore and too strict
     # - prefer-moving-to-variable - as of usage Theme.of(context) this lights up for every textTheme style used in one widget used
+    # - prefer-trailing-comma - this one is pure hardcore and too strict
     - tag-name:
         exclude:
           - test/**
@@ -303,9 +314,14 @@ dart_code_metrics:
     # - avoid-border-all - proposed solution is adding extra code complexity for meaningless profit
     - avoid-returning-widgets:
         severity: error
+    - avoid-shrink-wrap-in-lists
     - avoid-unnecessary-setstate
+    - avoid-use-expanded-as-spacer
     - avoid-wrapping-in-padding
+    - check-for-equals-in-render-object-setters
+    - consistent-update-render-object
     # - prefer-const-border-radius - proposed solution is adding extra code complexity for meaningless profit
+    - prefer-correct-edge-insets-constructor
     - prefer-extracting-callbacks:
         allowed-line-count: 0
         ignored-named-arguments:
@@ -325,9 +341,9 @@ dart_code_metrics:
     lines-of-code: 70
     maintainability-index: 60
     maximum-nesting-level: 4
+    number-of-methods: 7
     number-of-parameters: 4
     source-lines-of-code: 40
-    number-of-methods: 7
     weight-of-class: 0.33
 
     technical-debt:
