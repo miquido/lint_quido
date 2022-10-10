@@ -1,3 +1,10 @@
+## 0.3.3
+
+* Lints from dart_metrics version 4.19.1
+* Lints for Flutter 3.3.3
+* invariant_booleans was deprecated
+* avoid_catches_without_on_clauses was disabled
+
 ## 0.2.4
 
 * Lints from dart_metrics version 4.16.0
