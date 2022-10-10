@@ -91,7 +91,7 @@ linter:
     - deprecated_consistency
     # - diagnostic_describe_all_properties - Add unnecessary complexity to code and makes it difficult to read
     - directives_ordering
-    - discarded_futures
+    # - discarded_futures - do not work well with testing tools and cascade operator
     - do_not_use_environment
     - empty_catches
     - empty_constructor_bodies
@@ -275,7 +275,7 @@ dart_code_metrics:
           - static-public-fields
           - static-private-fields
           - fields
-          - overriden-methods
+          - overridden-methods
           - methods
     # - newline-before-return: - this is just stupid, especially when you have one-line methods
     #     exclude:
