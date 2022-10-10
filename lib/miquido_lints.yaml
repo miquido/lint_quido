@@ -255,7 +255,7 @@ dart_code_metrics:
     - avoid-redundant-async:
         severity: info
     # - avoid-throw-in-catch-block - enabling it only because of provided justification in our opinion is just flexing
-    - avoid-top-level-members-in-tests
+    - avoid-top-level-members-in-tests:
         exclude:
           - test/commons/**
     - avoid-unnecessary-type-assertions
