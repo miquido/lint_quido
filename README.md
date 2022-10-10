@@ -23,7 +23,7 @@ We tested current configuration with this environment:
 ```yaml
 environment:
   sdk: ">=2.17.0 <3.0.0"
-  flutter: ^3.3.3
+  flutter: ^3.3.4
 ```
 
 so it is required to update your flutter project to meet this conditions.
@@ -43,7 +43,7 @@ dev_dependencies:
 
 or
 
-you can copy content of [this file](lib/miquido_lints.yaml) to your `analysis_options.yaml`. In this approach remember that you need to depend on `dart_code_metrics: 4.19.1`, and you will need to add that package to your `pubspec.yaml` as well. Also you will need to visit this repository from time to time to check for changes! 
+you can copy content of [this file](lib/miquido_lints.yaml) to your `analysis_options.yaml`. In this approach remember that you need to depend on `dart_code_metrics: 4.20.0`, and you will need to add that package to your `pubspec.yaml` as well. Also you will need to visit this repository from time to time to check for changes! 
 
 Also if you star this repo, that would be nice.
 
