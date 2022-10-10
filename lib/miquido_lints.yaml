@@ -278,7 +278,6 @@ dart_code_metrics:
           - static-private-fields
           - fields
           - methods
-          - overridden-methods
     # - newline-before-return: - this is just stupid, especially when you have one-line methods
     #     exclude:
     #       - test/**
