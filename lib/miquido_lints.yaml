@@ -257,7 +257,7 @@ dart_code_metrics:
     # - avoid-throw-in-catch-block - enabling it only because of provided justification in our opinion is just flexing
     - avoid-top-level-members-in-tests
         exclude:
-          - test/commons
+          - test/commons/**
     - avoid-unnecessary-type-assertions
     - avoid-unnecessary-type-casts
     - avoid-unrelated-type-assertions
