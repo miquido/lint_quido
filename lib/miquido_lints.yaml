@@ -258,6 +258,8 @@ dart_code_metrics:
     - avoid-top-level-members-in-tests:
         exclude:
           - test/commons/**
+          - lib/**
+          - bin/**
     - avoid-unnecessary-type-assertions
     - avoid-unnecessary-type-casts
     - avoid-unrelated-type-assertions
