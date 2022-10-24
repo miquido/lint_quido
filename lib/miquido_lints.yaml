@@ -172,7 +172,7 @@ linter:
     - prefer_typing_uninitialized_variables
     - prefer_void_to_null
     - provide_deprecation_message
-    # - public_member_api_docs - Too much comments will be in code after enabling that, maybe useful in ultra large projects, sdks with lots of functionalites
+    # - public_member_api_docs - Too much comments will be in code after enabling that, maybe useful in ultra large projects, sdks with lots of functionalities
     - recursive_getters
     - require_trailing_commas
     - secure_pubspec_urls
@@ -278,6 +278,7 @@ dart_code_metrics:
           - static-private-fields
           - fields
           - methods
+    - missing-test-assertion
     # - newline-before-return: - this is just stupid, especially when you have one-line methods
     #     exclude:
     #       - test/**
