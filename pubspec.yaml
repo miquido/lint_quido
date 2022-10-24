@@ -5,7 +5,7 @@ homepage: https://www.miquido.com
 
 environment:
   sdk: ">=2.18.0 <3.0.0"
-  flutter: ^3.3.5
+  flutter: ">=3.3.5"
 
 dependencies:
   dart_code_metrics: ^4.21.2
