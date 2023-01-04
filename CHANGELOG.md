@@ -1,3 +1,7 @@
+## 0.3.6
+
+* Added example
+
 ## 0.3.5
 
 * Lints from dart_metrics version 4.21.2
