@@ -1,4 +1,4 @@
-include: package:miquido_flutter_lints/miquido_lints.yaml
+include: package:lint_quido/miquido_lints.yaml
 
 analyzer:
   errors:

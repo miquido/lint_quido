@@ -10,7 +10,7 @@ For general information about developing packages, see the Dart guide for
 and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
-# miquido_flutter_lints [![style: miquido lints](https://badgen.net/badge/style/miquido-flutter-lints/blue?icon=terminal)](https://github.com/miquido/miquido_flutter_lints)
+# lint_quido [![style: miquido lints](https://badgen.net/badge/style/miquido-flutter-lints/blue?icon=terminal)](https://github.com/miquido/lint_quido)
 ##### This is collection of Flutter lints that we use and follow in [Miquido Software development company](https://www.miquido.com).
 
 This is strict, large and robust collection because we strive for high quality code, good practices and we want follow the same coding style in all our mobile apps.
@@ -35,9 +35,9 @@ Until we are not published in [pub.dev](https://pub.dev), reference it like this
 
 ```yaml
 dev_dependencies:
-  miquido_flutter_lints:
+  lint_quido:
     git:
-      url: https://github.com/miquido/miquido_flutter_lints.git
+      url: https://github.com/miquido/lint_quido.git
       ref: main
 ```
 
@@ -48,10 +48,10 @@ you can copy content of [this file](lib/miquido_lints.yaml) to your `analysis_op
 Also if you star this repo, that would be nice.
 
 ## Usage
-After you add `miquido_flutter_lints` package as a dev_dependency, we recommend to copy code from below to `analysis_options.yaml` file which is in root of your flutter project folder.
+After you add `lint_quido` package as a dev_dependency, we recommend to copy code from below to `analysis_options.yaml` file which is in root of your flutter project folder.
 
 ```yaml
-include: package:miquido_flutter_lints/miquido_lints.yaml
+include: package:lint_quido/miquido_lints.yaml
 
 analyzer:
   errors:
