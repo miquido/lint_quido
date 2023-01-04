@@ -33,7 +33,7 @@ include: package:lint_quido/miquido_lints.yaml
 
 And that is all folks! You are good to go!
 
-#### Excluding and suppressing rules
+## Excluding and suppressing rules
 ###### Not recommended... :wink:
 If for some reason you don't want some lints, then you can exclude or suppress them.
 
@@ -60,7 +60,7 @@ In code add _ignore_ comments
 // ignore: public_member_api_docs
 ```
 
-#### Commands
+## Commands
 To analyze your code in terminal use this commands:
 ```sh
 # Default flutter analyze, mandatory to pass!
