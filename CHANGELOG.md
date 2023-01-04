@@ -1,3 +1,7 @@
+## 0.3.7
+
+* Updated usage in Readme
+
 ## 0.3.6
 
 * Added example
