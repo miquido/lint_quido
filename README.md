@@ -18,53 +18,24 @@ This is strict, large and robust collection because we strive for high quality c
 And we just looooove lots of lints. :blue_heart:
 
 ---
-## Getting started
-We tested current configuration with this environment:
-```yaml
-environment:
-  sdk: ">=2.18.0 <3.0.0"
-  flutter: ^3.3.5
-```
-
-so it is required to update your flutter project to meet this conditions.
-
-#### Installation
-Reference this package in your `pubspec.yaml` in **dev_dependencies** section.
-
-Until we are not published in [pub.dev](https://pub.dev), reference it like this
-
-```yaml
-dev_dependencies:
-  lint_quido:
-    git:
-      url: https://github.com/miquido/lint_quido.git
-      ref: main
-```
-
-or
-
-you can copy content of [this file](lib/miquido_lints.yaml) to your `analysis_options.yaml`. In this approach remember that you need to depend on `dart_code_metrics: 4.21.2`, and you will need to add that package to your `pubspec.yaml` as well. Also you will need to visit this repository from time to time to check for changes! 
-
-Also if you star this repo, that would be nice.
 
 ## Usage
-After you add `lint_quido` package as a dev_dependency, we recommend to copy code from below to `analysis_options.yaml` file which is in root of your flutter project folder.
+Firstly add a dev dependency in your `pubspec.yaml`:
+```yaml
+dev_dependencies:
+  lint_quido: 0.3.7
+```
 
+Secondly add an include in `analysis_options.yaml`:
 ```yaml
 include: package:lint_quido/miquido_lints.yaml
-
-analyzer:
-  errors:
-    # Those are handy, but annoying lints. Remember to change `ignore` to `info` once per two weeks or before app release.
-    prefer_const_constructors: ignore
-    prefer_const_constructors_in_immutables: ignore
 ```
 
 And that is all folks! You are good to go!
 
 #### Excluding and suppressing rules
 ###### Not recommended... :wink:
-If for some reason you don't agree with some linters, or you heavily oppose some approaches you can exclude or suppress lints.
+If for some reason you don't want some lints, then you can exclude or suppress them.
 
 ##### Excluding
 To completely exclude rule from linter, modify `analysis_options.yaml`:
