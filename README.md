@@ -101,7 +101,7 @@ dart pub run dart_code_metrics:metrics check-unused-code lib
 [Here](https://dartcodemetrics.dev/docs/cli/overview#available-commands) you can find documentation about dart metrics commands.
 
 ## Troubleshooting
-Sometimes working with cutting-edge versions might cause dependencies incompatibilities. For example `lint_quido ` do not want to cooperate with test_api package or analyzer package and so on.
+Sometimes working with cutting-edge versions might cause dependencies incompatibilities. For example `lint_quido` do not want to cooperate with test_api package or analyzer package and so on.
 To overcome this use older version of package or try using
 `dependency_overrides` in your pubspec.yaml file.
 
