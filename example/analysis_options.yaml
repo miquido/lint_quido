@@ -3,4 +3,6 @@ include: package:lint_quido/miquido_lints.yaml
 analyzer:
   errors:
     # The following syntax deactivates a lint for the entire project:
+    # Recommended to change to `info` once in a while
     prefer_const_constructors: ignore
+    prefer_const_constructors_in_immutables: ignore

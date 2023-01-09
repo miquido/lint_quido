@@ -236,12 +236,16 @@ linter:
 
 # More about this additional linter here: https://dartcodemetrics.dev/docs/rules/overview
 # This is more strict linter, and it is very cool to follow it, but it is not mandatory to obey.
-# Only set of default rules above is mandatory to resolve and pass pipeline
+# Only set of default rules above is mandatory to resolve and required to pass pipeline
 # to execute run `flutter analyze`. It should show "No issues found!" message.
 dart_code_metrics:
   rules:
+    # - arguments-ordering: - this is little bit too much
+    #    child-last: true
     # - avoid-banned-imports - this would be good for modular projects and packages
+    - avoid-cascade-after-if-null
     - avoid-collection-methods-with-unrelated-types
+    - avoid-double-slash-imports
     - avoid-duplicate-exports
     # - avoid-dynamic - as much as we would love to have it, sometimes it is necessary
     - avoid-global-state
@@ -254,7 +258,7 @@ dart_code_metrics:
     # - avoid-passing-async-when-sync-expected - doesn't go well with lambda expressions, onPressed or freezed
     - avoid-redundant-async:
         severity: info
-    # - avoid-throw-in-catch-block - enabling it only because of provided justification in our opinion is just flexing
+    # - avoid-throw-in-catch-block - enabling it because of provided justification in our opinion is just flexing
     - avoid-top-level-members-in-tests:
         exclude:
           - test/commons/**
@@ -270,15 +274,26 @@ dart_code_metrics:
         exclude:
           - test/**
     # - format-comment - disabled as too strict, and comments are - you know - comments
-    - member-ordering-extended: #This is order that works perfect with Flutter Stylizer for VS Code: https://marketplace.visualstudio.com/items?itemName=gmlewis-vscode.flutter-stylizer
+    - list-all-equatable-fields
+    - member-ordering: #This is order that works perfect with Flutter Stylizer for VS Code: https://marketplace.visualstudio.com/items?itemName=gmlewis-vscode.flutter-stylizer
         alphabetize: false
         order:
           - constructors
+          - named-constructor
+          - factory-constructor
           - static-public-fields
           - static-private-fields
           - fields
           - methods
-    - missing-test-assertion
+        widgets-order:
+          - constructor
+          - named-constructor
+          - fields
+          - methods
+          - build-method
+    - missing-test-assertion:
+      include-assertions:
+        - verify
     # - newline-before-return: - this is just stupid, especially when you have one-line methods
     #     exclude:
     #       - test/**
@@ -296,7 +311,7 @@ dart_code_metrics:
     - prefer-correct-identifier-length:
         exceptions: ['i', 'x', 'id', 'db']
         min-identifier-length: 3
-        max-identifier-length: 35
+        max-identifier-length: 30
     - prefer-correct-test-file-name:
         severity: error
     - prefer-correct-type-name
@@ -310,17 +325,24 @@ dart_code_metrics:
         exclude:
           - test/**
     # - prefer-moving-to-variable - as of usage Theme.of(context) this lights up for every textTheme style used in one widget used
+    - prefer-static-class:
+      ignore-private: true
+      ignore-names:
+        - startApp
+      exclude:
+        - test/**
     # - prefer-trailing-comma - this one is pure hardcore and too strict
     - tag-name:
         exclude:
           - test/**
     - always-remove-listener
     # - avoid-border-all - proposed solution is adding extra code complexity for meaningless profit
+    - avoid-expanded-as-spacer
     - avoid-returning-widgets:
         severity: error
     - avoid-shrink-wrap-in-lists
     - avoid-unnecessary-setstate
-    - avoid-use-expanded-as-spacer
+    - use-setstate-synchronously
     - avoid-wrapping-in-padding
     - check-for-equals-in-render-object-setters
     - consistent-update-render-object
@@ -336,6 +358,7 @@ dart_code_metrics:
           - builder
     - prefer-single-widget-per-file:
         ignore-private-widgets: true
+    - prefer-using-list-view
     - prefer-intl-name
     - provide-correct-intl-args
 
