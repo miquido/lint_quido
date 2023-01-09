@@ -294,6 +294,8 @@ dart_code_metrics:
     - missing-test-assertion:
       include-assertions:
         - verify
+        - verifyNever
+        - verifyInOrder
     # - newline-before-return: - this is just stupid, especially when you have one-line methods
     #     exclude:
     #       - test/**
