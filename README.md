@@ -20,22 +20,40 @@ And we just looooove lots of lints. :blue_heart:
 ---
 
 ## Usage
-Firstly add a dev dependency in your `pubspec.yaml`:
+#### Installation
+For a start please make sure you work with latest version of Flutter & Dart.
 ```yaml
-dev_dependencies:
-  lint_quido: 0.3.7
+environment:
+  sdk: ">=2.18.6 <3.0.0"
+  flutter: ^3.3.10
 ```
 
-Secondly add an include in `analysis_options.yaml`:
+Then add a dev dependency in your `pubspec.yaml`:
+From command line: 
+```bash
+flutter pub add --dev lint_quido
+#then
+pub get
+```
+
+or directly in pubspec.yaml
+
+```yaml
+dev_dependencies:
+  lint_quido: 0.4.0
+```
+
+At last in `analysis_options.yaml` add:
 ```yaml
 include: package:lint_quido/miquido_lints.yaml
 ```
 
-And that is all folks! You are good to go!
+**And that is all folks! You are good to go!**
 
-## Excluding and suppressing rules
+### Excluding and suppressing rules
 ###### Not recommended... :wink:
-If for some reason you don't want some lints, then you can exclude or suppress them.
+If for some reason you don't want follow some lints, you can exclude or suppress them.
+You can always check [example](/example/lib).
 
 ##### Excluding
 To completely exclude rule from linter, modify `analysis_options.yaml`:
@@ -66,15 +84,32 @@ To analyze your code in terminal use this commands:
 # Default flutter analyze, mandatory to pass!
 flutter analyze
 
-# Find unused files in your code! Nice to keep eye on this one.
-dart run dart_code_metrics:metrics check-unused-files lib
-
 # Dart metrics analyze, not mandatory to pass!
 # Also it calculate total technical debt of your project.
 dart run dart_code_metrics:metrics analyze lib
+
+# Find unused files in your code! Nice to keep eye on this one.
+dart run dart_code_metrics:metrics check-unused-files lib
+
+# You can check if all nullable variables are necessary in your code with
+dart run dart_code_metrics:metrics check-unnecessary-nullable lib
+
+# find unused line of codes
+dart pub run dart_code_metrics:metrics check-unused-code lib
 ```
 
-[Here](https://dartcodemetrics.dev/docs/cli/overview#available-commands) you can find documentation about dart metrics command.
+[Here](https://dartcodemetrics.dev/docs/cli/overview#available-commands) you can find documentation about dart metrics commands.
+
+## Troubleshooting
+Sometimes working with cutting-edge versions might cause dependencies incompatibilities. For example `lint_quido` do not want to cooperate with test_api package or analyzer package and so on.
+To overcome this use older version of package or try using
+`dependency_overrides` in your pubspec.yaml file.
+
+In your pubspec add:
+```yaml
+dependency_overrides:
+  test_api: 0.4.17
+```
 
 ## Additional information
 This is set of sources from which we are getting our linters and about good practices in Dart/Flutter:
