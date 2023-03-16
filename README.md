@@ -10,7 +10,7 @@ For general information about developing packages, see the Dart guide for
 and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
-# lint_quido [![style: miquido lints](https://badgen.net/badge/style/miquido-flutter-lints/blue?icon=terminal)](https://github.com/miquido/lint_quido)
+# lint_quido [![style: miquido lints](https://badgen.net/badge/style/lint_quido/blue?icon=terminal)](https://github.com/miquido/lint_quido)
 ##### This is collection of Flutter lints that we use and follow in [Miquido Software development company](https://www.miquido.com).
 
 This is strict, large and robust collection because we strive for high quality code, good practices and we want follow the same coding style in all our mobile apps.
@@ -24,8 +24,8 @@ And we just looooove lots of lints. :blue_heart:
 For a start please make sure you work with latest version of Flutter & Dart.
 ```yaml
 environment:
-  sdk: ">=2.18.6 <3.0.0"
-  flutter: ^3.3.10
+  sdk: ">=2.19.2 <3.0.0"
+  flutter: ^3.7.7
 ```
 
 Then add a dev dependency in your `pubspec.yaml`:
@@ -40,7 +40,7 @@ or directly in pubspec.yaml
 
 ```yaml
 dev_dependencies:
-  lint_quido: 0.4.0
+  lint_quido: 1.0.0
 ```
 
 At last in `analysis_options.yaml` add:

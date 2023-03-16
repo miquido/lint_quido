@@ -1,3 +1,8 @@
+## 1.0.0
+
+* Lints from dart_metrics version 5.4.0
+* Lints for Flutter 3.7.7 and Dart 2.19.2
+
 ## 0.4.0
 
 * Lints from dart_metrics version 5.4.0
