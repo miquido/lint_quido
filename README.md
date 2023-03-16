@@ -98,7 +98,7 @@ dart run dart_code_metrics:metrics check-unnecessary-nullable lib
 dart pub run dart_code_metrics:metrics check-unused-code lib
 ```
 
-[Here](https://dartcodemetrics.dev/docs/cli/overview#available-commands) you can find documentation about dart metrics commands.
+[Here](https://dcm.dev/docs/individuals/cli/analyze/) you can find documentation about dart metrics commands.
 
 ## Troubleshooting
 Sometimes working with cutting-edge versions might cause dependencies incompatibilities. For example `lint_quido` do not want to cooperate with test_api package or analyzer package and so on.
@@ -118,7 +118,7 @@ This is set of sources from which we are getting our linters and about good prac
 - [Customizing static analysis in Dart](https://dart.dev/guides/language/analysis-options)
 - [Effective Dart: Usage](https://dart.dev/guides/language/effective-dart/usage)
 - [Flutter lints](https://github.com/flutter/packages/tree/master/packages/flutter_lints)
-- [Dart metrics](https://dartcodemetrics.dev/docs/rules/overview)
+- [Dart metrics](https://dcm.dev/docs/individuals/rules/)
 - [Dart language type system](https://github.com/dart-lang/language/tree/master/resources/type-system)
 
 ---
