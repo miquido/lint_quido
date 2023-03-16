@@ -86,9 +86,8 @@ linter:
     - constant_identifier_names
     - control_flow_in_finally
     - curly_braces_in_flow_control_structures
-    # - depend_on_referenced_packages - This will make you at some point add all pub.dev to your pubspec file. Maybe suitable for ultra small petprojets with one dependency at max.
     - dangling_library_doc_comments
-    - depend_on_referenced_packages
+    # - depend_on_referenced_packages - This will make you at some point add all pub.dev to your pubspec file. Maybe suitable for ultra small pet projects with one dependency at max.
     - deprecated_consistency
     # - diagnostic_describe_all_properties - Add unnecessary complexity to code and makes it difficult to read
     - directives_ordering
@@ -104,7 +103,6 @@ linter:
     - hash_and_equals
     - implementation_imports
     - implicit_call_tearoffs
-    - invalid_case_patterns
     - iterable_contains_unrelated_type
     - join_return_with_assignment
     - leading_newlines_in_multiline_strings
@@ -194,7 +192,6 @@ linter:
     - unawaited_futures
     - unnecessary_await_in_return
     - unnecessary_brace_in_string_interps
-    - unnecessary_breaks
     - unnecessary_const
     - unnecessary_constructor_name
     # - unnecessary_final - absurd justification for this one
