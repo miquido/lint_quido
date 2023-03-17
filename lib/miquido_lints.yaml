@@ -376,7 +376,7 @@ dart_code_metrics:
     - correct-game-instantiating
     # Intl
     - prefer-intl-name
-    - prefer-provide-intl-description
+    # - prefer-provide-intl-description
     - provide-correct-intl-args
 
   metrics:
