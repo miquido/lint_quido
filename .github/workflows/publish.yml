@@ -1,9 +1,22 @@
-name: Publish to pub.dev
-
+name: Publish lint_quido to pub.dev
+#https://dart.dev/tools/pub/automated-publishing
 on:
   push:
     tags:
     - 'v[0-9]+.[0-9]+.[0-9]+*'
 jobs:
   publish:
-    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    permissions:
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+      - name: Install dependencies
+        run: |
+          flutter --version
+          flutter pub get
+      - name: Publish
+        run: dart pub publish --force
