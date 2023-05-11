@@ -1,11 +1,6 @@
 analyzer:
   plugins:
     - dart_code_metrics
-
-  # Explanation for this settings are described in Step 3 of this https://dash-overflow.net/articles/getting_started/
-  strong-mode:
-    implicit-casts: false
-    implicit-dynamic: false
   
   exclude:
     - "**/*.g.dart"
@@ -263,6 +258,7 @@ dart_code_metrics:
     # - avoid-passing-async-when-sync-expected - doesn't go well with lambda expressions, onPressed or freezed
     - avoid-redundant-async:
         severity: info
+    - avoid-substring
     # - avoid-throw-in-catch-block - enabling it because of provided justification in our opinion is just flexing
     - avoid-top-level-members-in-tests:
         exclude:
