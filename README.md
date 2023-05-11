@@ -24,8 +24,8 @@ And we just looooove lots of lints. :blue_heart:
 For a start please make sure you work with latest version of Flutter & Dart.
 ```yaml
 environment:
-  sdk: ">=2.19.2 <3.0.0"
-  flutter: ^3.7.7
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ^3.10.0
 ```
 
 Then add a dev dependency in your `pubspec.yaml`:
@@ -40,7 +40,7 @@ or directly in pubspec.yaml
 
 ```yaml
 dev_dependencies:
-  lint_quido: 1.0.0
+  lint_quido: 1.10.0
 ```
 
 At last in `analysis_options.yaml` add:
