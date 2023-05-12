@@ -1,3 +1,9 @@
+## 1.10.0
+* Lints from dart_metrics version 5.7.3
+* Lints for Flutter 3.10.0 and Dart 3.0.0
+* Removed `implicit-casts` and `implicit-dynamic` rules deprecated in Dart 3
+* Added `avoid-substring` rule from dart_code_metrics version 5.7.3
+
 ## 1.0.0
 
 * Lints from dart_metrics version 5.4.0
