@@ -399,8 +399,30 @@ dart_code_metrics:
     - tag-name:
         exclude:
           - test/**
-
-
+    - prefer-correct-future-return-type
+    - prefer-correct-stream-return-type
+    - avoid-nested-futures
+    - avoid-nested-streams-and-futures
+    - avoid-accessing-other-classes-private-members
+    - avoid-generics-shadowing
+    - avoid-uncaught-future-errors
+    - prefer-parentheses-with-if-null
+    - prefer-type-over-var
+    - avoid-keywords-in-wildcard-pattern
+    - avoid-misused-wildcard-pattern
+    - avoid-mutating-parameters
+    - avoid-unnecessary-call
+    - no-equal-nested-conditions
+    - avoid-negated-conditions
+    - prefer-correct-error-name:
+        allowed-names:
+          - e
+          - error
+    - map-keys-ordering
+    - avoid-unnecessary-futures
+    - avoid-shadowed-extension-methods
+    # - avoid-barrel-files - sometimes they're convenient; enable only if the analyzer has poor performance
+    - avoid-importing-entrypoint-exports
 
     # Flutter
     - prefer-define-hero-tag
@@ -440,17 +462,21 @@ dart_code_metrics:
     - avoid-state-constructors
     - avoid-unnecessary-stateful-widgets
     - avoid-stateless-widget-initialized-fields
-
+    # - avoid-missing-image-alt - not always used
+    - avoid-unnecessary-overrides-in-state
+    - prefer-dedicated-media-query-methods
 
     # Flame
     - avoid-creating-vector-in-update
     - avoid-initializing-in-on-mount
     - avoid-redundant-async-on-load
     - correct-game-instantiating
+
     # Intl
     - prefer-intl-name
     # - prefer-provide-intl-description
     - provide-correct-intl-args
+    - prefer-date-format
 
   metrics:
     coupling-between-object-classes: 12
