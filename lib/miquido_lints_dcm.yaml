@@ -341,7 +341,7 @@ dart_code_metrics:
     - avoid-long-functions
     - unnecessary-trailing-comma
     - avoid-duplicate-named-imports
-    - avoid-shadowing
+    # - avoid-shadowing - forces all 'context' variables in build() to have different names
     - prefer-return-await
     - avoid-collapsible-if
     - avoid-explicit-type-declaration
