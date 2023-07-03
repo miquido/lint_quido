@@ -421,7 +421,7 @@ dart_code_metrics:
     - avoid-unnecessary-futures
     - avoid-shadowed-extension-methods
     # - avoid-barrel-files - sometimes they're convenient; enable only if the analyzer has poor performance
-    - avoid-importing-entrypoint-exports
+    # - avoid-importing-entrypoint-exports - seems to be in conflict with 'always_use_package_imports' in tests
 
     # Flutter
     - prefer-define-hero-tag
