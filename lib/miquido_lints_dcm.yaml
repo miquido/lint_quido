@@ -349,7 +349,7 @@ dart_code_metrics:
     - avoid-redundant-else
     - avoid-self-assignment
     - avoid-self-compare
-    - avoid-similar-names
+    # - avoid-similar-names - matches too many acceptable cases 
     - avoid-unnecessary-nullable-return-type
     - avoid-unrelated-type-casts
     - format-test-name
@@ -357,7 +357,8 @@ dart_code_metrics:
     - no-equal-conditions
     - prefer-declaring-const-constructor
     - prefer-explicit-parameter-names
-    - prefer-correct-switch-length
+    - prefer-correct-switch-length:
+        min-length: 2
     - avoid-equal-expressions
     - avoid-declaring-call-method
     - prefer-early-return
@@ -409,7 +410,7 @@ dart_code_metrics:
     # - prefer-type-over-var - conflicts with 'omit_local_variable_types'
     - avoid-keywords-in-wildcard-pattern
     - avoid-misused-wildcard-pattern
-    - avoid-mutating-parameters
+    # - avoid-mutating-parameters - matches parameters of collection methods, like 'where'
     - avoid-unnecessary-call
     - no-equal-nested-conditions
     - avoid-negated-conditions
