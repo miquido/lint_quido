@@ -337,7 +337,6 @@ dart_code_metrics:
       exclude:
         - test/**
     # - prefer-trailing-comma - this one is pure hardcore and too strict
-    - tag-name
     - avoid-long-parameter-list
     - avoid-long-functions
     - unnecessary-trailing-comma
@@ -391,7 +390,7 @@ dart_code_metrics:
     - no-equal-switch-expression-cases
     - prefer-simpler-patterns-null-check
     - avoid-duplicate-patterns
-    - prefer-returning-conditional-expressions
+    # - prefer-returning-conditional-expressions - sometimes makes the code less readable
     - avoid-unnecessary-return
     - avoid-future-tostring
     - avoid-unassigned-late-fields-keyword
