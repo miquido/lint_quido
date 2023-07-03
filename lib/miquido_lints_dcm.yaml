@@ -372,7 +372,7 @@ dart_code_metrics:
     - function-always-returns-null
     - prefer-visible-for-testing-on-members
     - avoid-throw-objects-without-tostring
-    - avoid-unsafe-collection-methods
+    # - avoid-unsafe-collection-methods - adds a lot of boilerplate
     - avoid-one-field-records
     - move-records-to-typedefs
     - avoid-bottom-type-in-records
@@ -406,7 +406,7 @@ dart_code_metrics:
     - avoid-generics-shadowing
     - avoid-uncaught-future-errors
     - prefer-parentheses-with-if-null
-    - prefer-type-over-var
+    # - prefer-type-over-var - conflicts with 'omit_local_variable_types'
     - avoid-keywords-in-wildcard-pattern
     - avoid-misused-wildcard-pattern
     - avoid-mutating-parameters
@@ -421,10 +421,10 @@ dart_code_metrics:
     - avoid-unnecessary-futures
     - avoid-shadowed-extension-methods
     # - avoid-barrel-files - sometimes they're convenient; enable only if the analyzer has poor performance
-    # - avoid-importing-entrypoint-exports - seems to be in conflict with 'always_use_package_imports' in tests
+    # - avoid-importing-entrypoint-exports - conflicts with 'always_use_package_imports' in tests
 
     # Flutter
-    - prefer-define-hero-tag
+    # - prefer-define-hero-tag - rarely used
     - always-remove-listener
     # - avoid-border-all - proposed solution is adding extra code complexity for meaningless profit
     - avoid-returning-widgets:
@@ -455,7 +455,7 @@ dart_code_metrics:
     - dispose-fields
     - avoid-empty-setstate
     - prefer-widget-private-members
-    - prefer-action-button-tooltip
+    # - prefer-action-button-tooltip - rarely used
     - avoid-inherited-widget-in-initstate
     - avoid-late-context
     - avoid-state-constructors
