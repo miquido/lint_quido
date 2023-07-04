@@ -338,7 +338,9 @@ dart_code_metrics:
         - test/**
     # - prefer-trailing-comma - this one is pure hardcore and too strict
     - avoid-long-parameter-list
-    - avoid-long-functions
+    - avoid-long-functions:
+        exclude:
+          - test/**
     - unnecessary-trailing-comma
     - avoid-duplicate-named-imports
     # - avoid-shadowing - forces all 'context' variables in build() to have different names
@@ -455,7 +457,9 @@ dart_code_metrics:
     - add-copy-with
     - dispose-fields
     - avoid-empty-setstate
-    - prefer-widget-private-members
+    - prefer-widget-private-members:
+        ignored-names:
+          - show
     # - prefer-action-button-tooltip - rarely used
     - avoid-inherited-widget-in-initstate
     - avoid-late-context
