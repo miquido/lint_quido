@@ -341,7 +341,7 @@ dart_code_metrics:
     - avoid-long-functions:
         exclude:
           - test/**
-    - unnecessary-trailing-comma
+    # - unnecessary-trailing-comma - conflicts with 'require_trailing_commas' linter rule
     - avoid-duplicate-named-imports
     # - avoid-shadowing - forces all 'context' variables in build() to have different names
     - prefer-return-await
