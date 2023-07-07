@@ -415,7 +415,7 @@ dart_code_metrics:
     # - avoid-mutating-parameters - matches parameters of collection methods, like 'where'
     - avoid-unnecessary-call
     - no-equal-nested-conditions
-    - avoid-negated-conditions
+    # - avoid-negated-conditions - it's fine to have non-null condition first
     - prefer-correct-error-name:
         allowed-names:
           - e
@@ -460,6 +460,7 @@ dart_code_metrics:
     - prefer-widget-private-members:
         ignored-names:
           - show
+          - dismiss
     # - prefer-action-button-tooltip - rarely used
     - avoid-inherited-widget-in-initstate
     - avoid-late-context
