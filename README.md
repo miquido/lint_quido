@@ -113,7 +113,7 @@ dependency_overrides:
 
 ## Additional information
 This is set of sources from which we are getting our linters and about good practices in Dart/Flutter:
-- [Linter rules](https://dart.dev/tools/linter-rules)
+- [All Dart lints](https://dart.dev/tools/linter-rules/all)
 - [All Dart lints, but this time linter source code](https://github.com/dart-lang/linter/blob/main/example/all.yaml)
 - [Customizing static analysis in Dart](https://dart.dev/tools/analysis)
 - [Effective Dart: Usage](https://dart.dev/guides/language/effective-dart/usage)
