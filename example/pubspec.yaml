@@ -3,8 +3,8 @@ version: 1.0.0
 publish_to: none
 
 environment:
-  flutter: ">=3.7.7"
-  sdk: ">=2.19.2 <3.0.0"
+  sdk: ">=3.0.6 <4.0.0"
+  flutter: ">=3.13.1"
 
 dependencies:
   lint_quido:

@@ -24,8 +24,8 @@ And we just looooove lots of lints. :blue_heart:
 For a start please make sure you work with latest version of Flutter & Dart.
 ```yaml
 environment:
-  sdk: ">=3.0.0 <4.0.0"
-  flutter: ^3.10.0
+  sdk: ">=3.0.6 <4.0.0"
+  flutter: ^3.13.1
 ```
 
 Then add a dev dependency in your `pubspec.yaml`:
@@ -40,7 +40,7 @@ or directly in pubspec.yaml
 
 ```yaml
 dev_dependencies:
-  lint_quido: 1.10.0
+  lint_quido: 1.13.1
 ```
 
 At last in `analysis_options.yaml` add:
@@ -108,18 +108,18 @@ To overcome this use older version of package or try using
 In your pubspec add:
 ```yaml
 dependency_overrides:
-  test_api: 0.4.17
+  test_api: 0.4.18
 ```
 
 ## Additional information
 This is set of sources from which we are getting our linters and about good practices in Dart/Flutter:
-- [All Dart lints](https://dart-lang.github.io/linter/lints/)
-- [All Dart lints, but this time linter source code](https://github.com/dart-lang/linter/blob/master/example/all.yaml)
-- [Customizing static analysis in Dart](https://dart.dev/guides/language/analysis-options)
+- [Linter rules](https://dart.dev/tools/linter-rules)
+- [All Dart lints, but this time linter source code](https://github.com/dart-lang/linter/blob/main/example/all.yaml)
+- [Customizing static analysis in Dart](https://dart.dev/tools/analysis)
 - [Effective Dart: Usage](https://dart.dev/guides/language/effective-dart/usage)
-- [Flutter lints](https://github.com/flutter/packages/tree/master/packages/flutter_lints)
+- [Flutter lints](https://github.com/flutter/packages/tree/main/packages/flutter_lints)
 - [Dart metrics](https://dcm.dev/docs/individuals/rules/)
-- [Dart language type system](https://github.com/dart-lang/language/tree/master/resources/type-system)
+- [Dart language type system](https://github.com/dart-lang/language/tree/main/resources/type-system)
 
 ---
 #### About Miquido

@@ -101,7 +101,6 @@ linter:
     - implicit_call_tearoffs
     - implicit_reopen
     - invalid_case_patterns
-    - iterable_contains_unrelated_type
     - join_return_with_assignment
     - leading_newlines_in_multiline_strings
     - library_annotations
@@ -109,7 +108,6 @@ linter:
     - library_prefixes
     # - library_private_types_in_public_api - Disabled as any stateful widget triggers it
     # - lines_longer_than_80_chars - In Miquido there are two teams: 100 or 120. One of them is wrong.
-    - list_remove_unrelated_type
     - literal_only_boolean_expressions
     - matching_super_parameters
     - missing_whitespace_between_adjacent_strings
@@ -121,6 +119,8 @@ linter:
     - no_literal_bool_comparisons
     - no_logic_in_create_state
     - no_runtimeType_toString
+    - no_self_assignments
+    - no_wildcard_variable_uses
     - non_constant_identifier_names
     - noop_primitive_operations
     - null_check_on_nullable_type_parameter
