@@ -19,7 +19,7 @@ platforms:
   web:
 
 dependencies:
-  dart_code_metrics: 5.7.6
+  dart_code_metrics: ^5.7.6
   
   flutter:
     sdk: flutter
