@@ -1,5 +1,5 @@
 name: lint_quido
-version: 1.10.0
+version: 1.13.1
 description: Collection of Flutter lints that we use and follow in Miquido
 repository: https://github.com/miquido/lint_quido
 issue_tracker: https://github.com/miquido/lint_quido/issues
@@ -7,11 +7,19 @@ homepage: https://github.com/miquido/lint_quido
 documentation: https://github.com/miquido/lint_quido
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
-  flutter: ">=3.10.0"
+  sdk: ">=3.0.6 <4.0.0"
+  flutter: ">=3.13.1"
+
+platforms:
+  linux:
+  windows:
+  macos:
+  ios:
+  android:
+  web:
 
 dependencies:
-  dart_code_metrics: ^5.7.3
+  dart_code_metrics: 5.7.6
   
   flutter:
     sdk: flutter

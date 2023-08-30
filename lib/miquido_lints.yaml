@@ -26,6 +26,7 @@ linter:
     - always_declare_return_types
     - always_put_control_body_on_new_line
     - always_put_required_named_parameters_first
+    - always_require_non_null_named_parameters
     # - always_specify_types - Incompatible with avoid_types_on_closure_parameters, which we prefer
     - always_use_package_imports
     - annotate_overrides
@@ -54,6 +55,8 @@ linter:
     - avoid_relative_lib_imports
     - avoid_renaming_method_parameters
     - avoid_return_types_on_setters
+    - avoid_returning_null
+    - avoid_returning_null_for_future
     - avoid_returning_null_for_void
     - avoid_returning_this
     - avoid_setters_without_getters
@@ -121,6 +124,8 @@ linter:
     - no_literal_bool_comparisons
     - no_logic_in_create_state
     - no_runtimeType_toString
+    - no_self_assignments
+    - no_wildcard_variable_uses
     - non_constant_identifier_names
     - noop_primitive_operations
     - null_check_on_nullable_type_parameter
