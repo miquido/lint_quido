@@ -25,7 +25,7 @@ For a start please make sure you work with latest version of Flutter & Dart.
 ```yaml
 environment:
   sdk: ">=3.0.6 <4.0.0"
-  flutter: ^3.13.1
+  flutter: ^3.13.2
 ```
 
 Then add a dev dependency in your `pubspec.yaml`:
@@ -40,7 +40,7 @@ or directly in pubspec.yaml
 
 ```yaml
 dev_dependencies:
-  lint_quido: 1.13.1
+  lint_quido: 1.13.2
 ```
 
 At last in `analysis_options.yaml` add:
