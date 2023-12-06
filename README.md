@@ -24,8 +24,8 @@ And we just looooove lots of lints. :blue_heart:
 For a start please make sure you work with latest version of Flutter & Dart.
 ```yaml
 environment:
-  sdk: ">=3.0.6 <4.0.0"
-  flutter: ^3.13.2
+  sdk: ">=3.2.2 <4.0.0"
+  flutter: ^3.16.2
 ```
 
 Then add a dev dependency in your `pubspec.yaml`:
@@ -40,7 +40,7 @@ or directly in pubspec.yaml
 
 ```yaml
 dev_dependencies:
-  lint_quido: 1.13.2
+  lint_quido: 1.16.0
 ```
 
 At last in `analysis_options.yaml` add:
@@ -118,7 +118,7 @@ This is set of sources from which we are getting our linters and about good prac
 - [Customizing static analysis in Dart](https://dart.dev/tools/analysis)
 - [Effective Dart: Usage](https://dart.dev/guides/language/effective-dart/usage)
 - [Flutter lints](https://github.com/flutter/packages/tree/main/packages/flutter_lints)
-- [Dart metrics](https://dcm.dev/docs/individuals/rules/)
+- [Dart Code Metrics](https://dcm.dev/docs/rules/)
 - [Dart language type system](https://github.com/dart-lang/language/tree/main/resources/type-system)
 
 ---

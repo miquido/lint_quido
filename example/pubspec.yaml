@@ -1,10 +1,10 @@
 name: lint_quido_example
-version: 1.0.0
+version: 1.16.0
 publish_to: none
 
 environment:
-  sdk: ">=3.0.6 <4.0.0"
-  flutter: ">=3.13.1"
+  sdk: ">=3.2.2 <4.0.0"
+  flutter: ">=3.16.2"
 
 dependencies:
   lint_quido:
