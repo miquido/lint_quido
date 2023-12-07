@@ -1,3 +1,8 @@
+## 1.16.0
+* Lints from dart_metrics version 5.7.6
+* Lints for Flutter 3.16.2 and Dart 3.2.2
+* :warning: This version is based on discontinued DCM version
+
 ## 1.13.2
 * Lints from dart_metrics version 5.7.6
 * Lints for Flutter 3.13.0 and Dart 3.0.6

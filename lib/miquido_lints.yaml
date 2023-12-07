@@ -30,6 +30,7 @@ linter:
     # - always_specify_types - Incompatible with avoid_types_on_closure_parameters, which we prefer
     - always_use_package_imports
     - annotate_overrides
+    - annotate_redeclares
     # - avoid_annotating_with_dynamic - Super problematic to fix with avoid_types_on_closure_parameters enabled
     - avoid_bool_literals_in_conditional_expressions
     # - avoid_catches_without_on_clauses - Flutter throws _CastError when parsing json fails, so we need to handle both Error and Exception in all API classes
@@ -104,7 +105,6 @@ linter:
     - implicit_call_tearoffs
     - implicit_reopen
     - invalid_case_patterns
-    - iterable_contains_unrelated_type
     - join_return_with_assignment
     - leading_newlines_in_multiline_strings
     - library_annotations
@@ -112,7 +112,6 @@ linter:
     - library_prefixes
     # - library_private_types_in_public_api - Disabled as any stateful widget triggers it
     # - lines_longer_than_80_chars - In Miquido there are two teams: 100 or 120. One of them is wrong.
-    - list_remove_unrelated_type
     - literal_only_boolean_expressions
     - matching_super_parameters
     - missing_whitespace_between_adjacent_strings
@@ -150,7 +149,7 @@ linter:
     - prefer_constructors_over_static_methods
     - prefer_contains
     # - prefer_double_quotes - We prefer_single_quotes
-    # - prefer_expression_function_bodies - We like mix of return and =>
+    # - prefer_expression_function_bodies - We like mix of return and => and that is ok
     - prefer_final_fields
     - prefer_final_in_for_each
     - prefer_final_locals
@@ -201,7 +200,7 @@ linter:
     - unnecessary_breaks
     - unnecessary_const
     - unnecessary_constructor_name
-    # - unnecessary_final - absurd justification for this one
+    # - unnecessary_final - we prefer_final_locals
     - unnecessary_getters_setters
     - unnecessary_lambdas
     - unnecessary_late
