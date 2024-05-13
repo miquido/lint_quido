@@ -26,7 +26,6 @@ linter:
     - always_declare_return_types
     - always_put_control_body_on_new_line
     - always_put_required_named_parameters_first
-    - always_require_non_null_named_parameters
     # - always_specify_types - Incompatible with avoid_types_on_closure_parameters, which we prefer
     - always_use_package_imports
     - annotate_overrides
@@ -56,8 +55,6 @@ linter:
     - avoid_relative_lib_imports
     - avoid_renaming_method_parameters
     - avoid_return_types_on_setters
-    - avoid_returning_null
-    - avoid_returning_null_for_future
     - avoid_returning_null_for_void
     - avoid_returning_this
     - avoid_setters_without_getters
@@ -114,6 +111,7 @@ linter:
     # - lines_longer_than_80_chars - In Miquido there are two teams: 100 or 120. One of them is wrong.
     - literal_only_boolean_expressions
     - matching_super_parameters
+    # - missing_code_block_language_in_doc_comment - currently experimental and not yet available in a stable SDK.
     - missing_whitespace_between_adjacent_strings
     - no_adjacent_strings_in_list
     - no_default_cases
@@ -195,6 +193,7 @@ linter:
     - type_init_formals
     - type_literal_in_constant_pattern
     - unawaited_futures
+    # - unintended_html_in_doc_comment - currently experimental and not yet available in a stable SDK.
     - unnecessary_await_in_return
     - unnecessary_brace_in_string_interps
     - unnecessary_breaks
@@ -205,6 +204,7 @@ linter:
     - unnecessary_lambdas
     - unnecessary_late
     - unnecessary_library_directive
+    # - unnecessary_library_name - currently experimental and not yet available in a stable SDK.
     - unnecessary_new
     - unnecessary_null_aware_assignments
     - unnecessary_null_aware_operator_on_extension_on_nullable

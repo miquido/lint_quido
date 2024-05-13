@@ -1,14 +1,24 @@
+## 1.19.0
+
+* Lints from dart_metrics version 5.7.6
+* Lints for Flutter 3.19.6 and Dart 3.3.4
+* Added separate lints config for Flutter & Dart packages
+* :warning: This version is based on discontinued DCM version
+
 ## 1.16.0
+
 * Lints from dart_metrics version 5.7.6
 * Lints for Flutter 3.16.2 and Dart 3.2.2
 * :warning: This version is based on discontinued DCM version
 
 ## 1.13.2
+
 * Lints from dart_metrics version 5.7.6
 * Lints for Flutter 3.13.0 and Dart 3.0.6
 * :warning: This version is based on discontinued DCM version
 
 ## 1.10.0
+
 * Lints from dart_metrics version 5.7.3
 * Lints for Flutter 3.10.0 and Dart 3.0.0
 * Removed `implicit-casts` and `implicit-dynamic` rules deprecated in Dart 3
