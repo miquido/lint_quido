@@ -1,0 +1,10 @@
+# This set of lints builds on top of `package:lints/core.yaml`.
+# It includes lints dedicated to the Flutter and Dart packages.
+
+include: package:lint_quido/miquido_lints.yaml
+
+linter:
+  rules:
+    always_use_package_imports: false
+    prefer_relative_imports: true
+    public_member_api_docs: true
