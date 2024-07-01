@@ -5,16 +5,5 @@ on:
       - main
 
 jobs:
-  publishing:
-    runs-on: ubuntu-latest
-    environment: 'pub creds'
-    steps:
-      - name: 'Checkout'
-        uses: actions/checkout@main # required!
-
-      - name: 'Publishing'
-        uses: k-paxian/dart-package-publisher@master
-        with:
-          flutter: true
-          accessToken: ${{ secrets.OAUTH_ACCESS_TOKEN }}
-          refreshToken: ${{ secrets.OAUTH_REFRESH_TOKEN }}
+  publish:
+    uses: dart-lang/ecosystem/.github/workflows/publish.yaml@main
