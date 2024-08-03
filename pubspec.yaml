@@ -1,5 +1,5 @@
 name: lint_quido
-version: 1.19.0
+version: 1.22.3
 description: Collection of Flutter lints that we use and follow in Miquido
 repository: https://github.com/miquido/lint_quido
 issue_tracker: https://github.com/miquido/lint_quido/issues
@@ -11,8 +11,8 @@ topics:
   - lints
 
 environment:
-  sdk: ">=3.3.4 <4.0.0"
-  flutter: ">=3.19.6"
+  sdk: ">=3.4.4 <4.0.0"
+  flutter: ">=3.22.3"
 
 platforms:
   android:
