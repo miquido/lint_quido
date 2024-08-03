@@ -24,8 +24,8 @@ And we just looooove lots of lints. :blue_heart:
 For a start please make sure you work with latest version of Flutter & Dart.
 ```yaml
 environment:
-  sdk: ">=3.2.2 <4.0.0"
-  flutter: ^3.16.2
+  sdk: ">=3.4.4 <4.0.0"
+  flutter: ^3.22.3
 ```
 
 Then add a dev dependency in your `pubspec.yaml`:
@@ -40,7 +40,7 @@ or directly in pubspec.yaml
 
 ```yaml
 dev_dependencies:
-  lint_quido: 1.16.0
+  lint_quido: 1.22.3
 ```
 
 At last in `analysis_options.yaml` add:
@@ -98,7 +98,7 @@ dart run dart_code_metrics:metrics check-unnecessary-nullable lib
 dart pub run dart_code_metrics:metrics check-unused-code lib
 ```
 
-[Here](https://dcm.dev/docs/individuals/cli/analyze/) you can find documentation about dart metrics commands.
+[Here](https://dcm.dev/docs/cli/) you can find documentation about dart metrics commands.
 
 ## Troubleshooting
 Sometimes working with cutting-edge versions might cause dependencies incompatibilities. For example `lint_quido` do not want to cooperate with test_api package or analyzer package and so on.
