@@ -13,6 +13,6 @@ jobs:
     permissions:
       id-token: write # Required for authentication using OIDC
     #visit: https://github.com/dart-lang/ecosystem/blob/main/.github/workflows/publish.yaml
-    uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    uses: dart-lang/ecosystem/.github/workflows/publish.yaml@main
     with:
-      sdk: 'dev'
+      use-flutter: true
