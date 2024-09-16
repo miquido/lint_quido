@@ -1,3 +1,4 @@
+#https://dart.dev/tools/pub/automated-publishing
 name: Publish lint_quido to pub.dev
 on:
   push:
@@ -7,5 +8,9 @@ on:
 jobs:
   publish:
     permissions:
-      id-token: write
+      id-token: write # Required for authentication using OIDC
+      pull-requests: write
+    #visit https://github.com/dart-lang/ecosystem/blob/main/.github/workflows/publish.yaml
     uses: dart-lang/ecosystem/.github/workflows/publish.yaml@main
+    with:
+      use-flutter: true
