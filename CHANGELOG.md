@@ -1,4 +1,4 @@
-## 1.24.5
+## 1.24.0
 
 * Lints for Flutter 3.24.5 and Dart 3.5.4
 * Lints from dart_metrics version 5.7.6

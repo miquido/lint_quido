@@ -40,7 +40,7 @@ or directly in pubspec.yaml
 
 ```yaml
 dev_dependencies:
-  lint_quido: 1.24.5
+  lint_quido: 1.24.0
 ```
 
 At last in `analysis_options.yaml` add:
