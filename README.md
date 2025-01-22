@@ -24,8 +24,8 @@ And we just looooove lots of lints. :blue_heart:
 For a start please make sure you work with latest version of Flutter & Dart.
 ```yaml
 environment:
-  sdk: ">=3.4.4 <4.0.0"
-  flutter: ^3.22.3
+  sdk: ">=3.5.4 <4.0.0"
+  flutter: ^3.24.5
 ```
 
 Then add a dev dependency in your `pubspec.yaml`:
@@ -40,7 +40,7 @@ or directly in pubspec.yaml
 
 ```yaml
 dev_dependencies:
-  lint_quido: 1.22.3
+  lint_quido: 1.24.0
 ```
 
 At last in `analysis_options.yaml` add:
@@ -114,7 +114,7 @@ dependency_overrides:
 ## Additional information
 This is set of sources from which we are getting our linters and about good practices in Dart/Flutter:
 - [All Dart lints](https://dart.dev/tools/linter-rules/all)
-- [All Dart lints, but this time linter source code](https://github.com/dart-lang/linter/blob/main/example/all.yaml)
+- [All Dart lints, but this time linter source code](https://github.com/dart-lang/sdk/blob/main/pkg/linter/example/all.yaml)
 - [Customizing static analysis in Dart](https://dart.dev/tools/analysis)
 - [Effective Dart: Usage](https://dart.dev/guides/language/effective-dart/usage)
 - [Flutter lints](https://github.com/flutter/packages/tree/main/packages/flutter_lints)
@@ -125,4 +125,4 @@ This is set of sources from which we are getting our linters and about good prac
 #### About Miquido
 - [About](https://careers.miquido.com/about-us/)
 - [Careers](https://careers.miquido.com/job-offers/)
-- [Internship at Miquido](https://careers.miquido.com/students/)
+- [Internship at Miquido](https://careers.miquido.com/internships/)
